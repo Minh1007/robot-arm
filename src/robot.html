@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ROBOT</title>
+    <script src="../js/webgl-utils.js"></script>    
+    <script src="../js/shader-util.js"></script>
+    <script src="../js/matrix.js"></script>
+    <script src="../js/draw.js"></script>
+    <script src="../js/size.js"></script>
+    <script src="robot_main.js"></script>
+    <link type="text/css" href="../css/gl.css" rel="stylesheet" />    
+  </head>
+ 
+  <body onload="main()">
+    <div class = "controlkeys">      
+      <table><tbody>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('r')">r</button></td><td>Move along x-axis</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('t')">t</button></td><td>Move along y-axis</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('y')">y</button></td><td>Move along z-axis</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('f')">f</button></td><td>scale right upper arm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('g')">g</button></td><td>scale right lower arm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('h')">h</button></td><td>scale left upper arm</td></tr>                
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('j')">j</button></td><td>scale left lower arm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('4')">&larr;</button></td><td>+rotate right upper arm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('6')">&rarr;</button></td><td>-rotate right upper arm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('8')">&uarr;</button></td><td>+rotate right lower arm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('2')">&darr;</button></td><td>-rotate right lower arm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('u')">u</button></td><td>+rotate right palm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('i')">i</button></td><td>-rotate right palm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('o')">o</button></td><td>+rotate right finger</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('p')">p</button></td><td>-rotate right finger</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('a')">a</button></td><td>+rotate left upper arm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('d')">d</button></td><td>-rotate left upper arm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('w')">w</button></td><td>+rotate left lower arm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('s')">s</button></td><td>-rotate left lower arm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('z')">z</button></td><td>+rotate left palm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('x')">x</button></td><td>-rotate left palm</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('c')">c</button></td><td>+rotate left finger</td></tr>
+         <tr><td><button class = "controlbtn" onclick="onclickbtn('v')">v</button></td><td>-rotate left finger</td></tr>
+         <!--<tr><td><button class = "controlbtn" onclick="onclickbtn('m')">m</button></td><td>mirroring antenna</td></tr>-->
+      </tbody></table>
+    </div>
+    <canvas id="webgl"></canvas>  
+    <div class= "description">
+      Robot can move. Upper,lower arms,palms and
+      fingers can rotate and upper,lower arms can increase.
+      <br>
+      See control buttons right side.And it can be done by keyboard.
+      Enjoy it.
+    </div>  
+  </body>
+</html>

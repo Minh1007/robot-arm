@@ -1,0 +1,27 @@
+body {
+    margin: 0px;    
+    color: #aaa
+} 
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  border: 0px !important;
+}
+
+.controlkeys{
+    position:absolute;
+    top:10px;
+    right:10px
+}
+
+.controlbtn{
+    width:25px;
+    margin-right: 5px
+}
+
+.description{
+    bottom:10px;
+    left:10px;
+    position :absolute
+}
