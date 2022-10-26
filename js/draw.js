@@ -25,7 +25,7 @@ var FRAGMENT_SHADER_SOURCE =
   '  gl_FragColor = v_Color;\n' +
   '}\n';
 
-var g_stepingAngle = 3.0; 
+var g_stepingAngle = 3.5; 
 var g_step = 0.1;
 var g_scale_step = 0.1;
 
